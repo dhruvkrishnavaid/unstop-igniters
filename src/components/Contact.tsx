@@ -1,9 +1,14 @@
+import { motion } from "motion/react";
 const Contact = () => {
   return (
     <div className="flex flex-col gap-4 p-6">
-      <h1 className="text-4xl font-bold">Contact Us</h1>
+      <motion.h1 
+          initial={{ y: 10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 100, transition: { duration: 0.75 } }} className="text-4xl font-bold">Contact Us</motion.h1>
       <div className="grid md:grid-cols-3">
-        <div className="flex flex-col gap-4">
+        <motion.div 
+          initial={{ y: 10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 100, transition: { duration: 0.75 } }} className="flex flex-col gap-4">
           <div className="text-4xl font-bold text-blue-600 w-full text-center">
             1
           </div>
@@ -12,8 +17,10 @@ const Contact = () => {
             Visit our website for the latest updates, resources, and event
             information.
           </div>
-        </div>
-        <div className="flex flex-col gap-4">
+        </motion.div>
+        <motion.div 
+          initial={{ y: 10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 100, transition: { duration: 0.75 } }} className="flex flex-col gap-4">
           <div className="text-4xl font-bold text-sky-600 w-full text-center">
             2
           </div>
@@ -22,8 +29,10 @@ const Contact = () => {
             Contact us at [email address] for any queries, feedback, or
             suggestions.
           </div>
-        </div>
-        <div className="flex flex-col gap-4">
+        </motion.div>
+        <motion.div 
+          initial={{ y: 10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 100, transition: { duration: 0.75 } }} className="flex flex-col gap-4">
           <div className="text-4xl font-bold text-pink-600 w-full text-center">
             3
           </div>
@@ -34,7 +43,7 @@ const Contact = () => {
             Follow us on [Social Media Handles] to stay connected with our
             community.
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

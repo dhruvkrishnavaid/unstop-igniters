@@ -4,13 +4,17 @@ const Team = () => {
     <div className="p-6">
       <motion.h1
         initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 100, transition: { duration: 0.75 } }}
+        whileInView={{ y: 0, opacity: 100, transition: { duration: 0.75 } }}
         className="w-full pt-6 text-4xl font-bold text-center pb-4"
       >
         Meet Our Team: Igniting Innovation
       </motion.h1>
       <div className="py-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <motion.div initial={{y: 10, opacity: 0}} animate={{y:0, opacity:100, transition: {duration: 0.75}}} className="backdrop-blur-2xl p-6 rounded-lg flex flex-col gap-6">
+        <motion.div
+          initial={{ y: 10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 100, transition: { duration: 0.75 } }}
+          className="backdrop-blur-2xl p-6 rounded-lg flex flex-col gap-6"
+        >
           <img
             src="https://picsum.photos/200/300"
             className="w-full max-w-sm h-64 rounded-xl shadow-lg"
@@ -21,7 +25,11 @@ const Team = () => {
             Igniters' mission.
           </p>
         </motion.div>
-        <motion.div initial={{y: 10, opacity: 0}} animate={{y:0, opacity:100, transition: {duration: 0.75}}} className="backdrop-blur-2xl p-6 rounded-lg flex flex-col gap-6">
+        <motion.div
+          initial={{ y: 10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 100, transition: { duration: 0.75 } }}
+          className="backdrop-blur-2xl p-6 rounded-lg flex flex-col gap-6"
+        >
           <img
             src="https://picsum.photos/200/300"
             className="w-full max-w-sm h-64 rounded-xl shadow-lg"
@@ -32,7 +40,11 @@ const Team = () => {
             driving our website and online initiatives.
           </p>
         </motion.div>
-        <motion.div initial={{y: 10, opacity: 0}} animate={{y:0, opacity:100, transition: {duration: 0.75}}} className="backdrop-blur-2xl p-6 rounded-lg flex flex-col gap-6">
+        <motion.div
+          initial={{ y: 10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 100, transition: { duration: 0.75 } }}
+          className="backdrop-blur-2xl p-6 rounded-lg flex flex-col gap-6"
+        >
           <img
             src="https://picsum.photos/200/300"
             className="w-full max-w-sm h-64 rounded-xl shadow-lg"
